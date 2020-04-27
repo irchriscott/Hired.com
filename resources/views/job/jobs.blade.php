@@ -11,7 +11,7 @@
                     <p><strong>Salary : </strong> {{ $job->getSalary() }}</p>
                     <p><strong>Duration : </strong> {{ $job->getDuration() }}</p>
                 </div>
-                <div class="hd-categories-badges hd-badge-small" id="hd-form-badges">
+                <div class="hd-categories-badges hd-badge-small">
                     @if(count($job->preferences) > 0)
                         @foreach($job->preferences as $pref)
                             <div class="hd-badge">

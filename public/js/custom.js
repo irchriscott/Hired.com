@@ -172,7 +172,7 @@ $(document).ready(function () {
             $("#hd-job-duration").val(value);
         }
     });
-    $("#hd-from-date, #hd-to-date").datepicker({
+    $("#hd-from-date, #hd-to-date, #hd-deadline-date").datepicker({
         startDate: '1d',
         format: 'dd-mm-yyyy'
     });

@@ -21,17 +21,11 @@ class Category extends Model
     }
 
     public function profilesCount(){
-        $profiles = UserProfile::whereHas('preferences', function($query){
-            $query->where('category_id', $this->id);
-        })->get();
-        return count($profiles);
+        return count($this->profiles);
     }
 
     public function jobsCount(){
-        $jobs = Job::whereHas('preferences', function($query){
-            $query->where('category_id', $this->id);
-        })->get();
-        return count($jobs);
+        return count($this->jobs);
     }
 
     public function jobs(){

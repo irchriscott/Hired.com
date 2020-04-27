@@ -12,7 +12,7 @@ class Job extends Model
 
     protected $fillable = [
         'user_id', 'job_type', 'title', 'position', 'min_salary', 'max_salary', 'currency', 'per','description', 'allow_comment',
-        'is_remote', 'status', 'duration', 'duration_type', 'from_date', 'to_date', 'is_available', 'uuid'
+        'is_remote', 'status', 'duration', 'duration_type', 'from_date', 'to_date', 'is_available', 'uuid', 'deadline'
     ];
     
     protected $dates = ['deleted_at'];

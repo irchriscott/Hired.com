@@ -86,6 +86,7 @@ class JobsController extends Controller
             'duration_type' => $request->input('duration_type'),
             'from_date' => $request->input('from_date'),
             'to_date' => $request->input('to_date'),
+            'deadline' => $request->input('deadline'),
             'description' => $request->input('description'),
             'is_remote' => $request->input('is_remote'),
             'allow_comment' => $request->input('can_comment'),

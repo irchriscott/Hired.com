@@ -30,6 +30,7 @@ class CreateJobsTable extends Migration
             $table->string('duration_type')->nullable();
             $table->datetime('from_date')->nullable();
             $table->datetime('to_date')->nullable();
+            $table->datetime('deadline')->nullable();
             $table->boolean('is_deleted')->default(false);
             $table->boolean('is_available');
             $table->boolean('allow_comment')->default(true);

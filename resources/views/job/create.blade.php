@@ -68,6 +68,9 @@
                 <p style="margin-top:8px;"><input type="checkbox" id="specify" /> Specify Duration</p>
             </div>
             <br/>
+            {!! Form::label('deadline', 'Deadline : ') !!}
+            {!! Form::text('deadline', '', ['class' => 'form-control', 'requited' => true, 'placeholder' => 'Enter Deadline', 'id' => 'hd-deadline-date', 'autocomplete' => 'off']) !!}
+            <br/>
             {!! Form::label('description', 'Describe the ' . $type . ' : ') !!}
             {!! Form::textarea('description', '', ['class' => 'form-control', 'id' => 'hd-job-description']) !!}
             <br/>
